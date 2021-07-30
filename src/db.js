@@ -55,12 +55,12 @@ const commentData = [
     post: 'b'
   }, {
     id: 'cc',
-    text: 'Ugh, cultural appropriation',
+    text: 'Ugh, another day in the office...',
     author: '3',
     post: 'c'
   }, {
     id: 'dd',
-    text: '??? Wtf is this',
+    text: 'What is this??',
     author: '1',
     post: 'a'
   }

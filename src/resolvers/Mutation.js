@@ -158,10 +158,21 @@ const Mutation = {
       throw new Error('No post found with that id');
     }
 
+    // THIS IS THE CORRECT CODE
+    // const comment = {
+    //   id: uuidv4(),
+    //   ...args.data
+    // };
+
+    // THIS IS THE CODE I TRIED USING THE AUTHOR AND POST OBJECTS COMING FROM ABOVE
     const comment = {
       id: uuidv4(),
-      ...args.data
+      text: args.data.text,
+      author: author, // using author.id actually works fine
+      post: post      // using post.id actually works fine
     };
+
+    console.log(comment);
 
     db.commentData.push(comment);
 
